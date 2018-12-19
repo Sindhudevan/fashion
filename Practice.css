@@ -1,0 +1,32 @@
+.mainarea{
+        background-color: aqua;
+        height: 500px;
+        text-align: center
+        
+}
+table{
+   width: 100%;
+   text-align: center;
+   border-collapse: collapse;
+   border: none;
+
+}
+tr{
+        border-bottom: 10px;
+}
+th{
+        text-align: center;
+        background-color: blueviolet;
+}
+td{
+        border: 2px solid black; 
+        padding: 10px;
+        background-color: beige;
+}
+
+.subarea{
+        background-color: rgb(185, 44, 44);
+        width: 80%;
+        margin: auto;
+        text-align: center;
+}
