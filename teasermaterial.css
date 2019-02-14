@@ -1,0 +1,186 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.topbar{
+  height: 50px;
+  background-image: url(./atom/fashionmain.jpg);
+  background-size: cover;
+}
+
+.topbar-Icon-Circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  background-color: transparent;
+}
+.shop-notification{
+position: absolute;
+bottom: 20px;
+left: 20px;
+}
+.page-notification{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.buy-notification{
+  position:absolute;
+  left: 2px;
+  bottom: 20px;
+}
+.card-text{
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #000000ba;
+  color: white;
+  padding: 5px;
+}
+.card-text-section-banner{
+  height: 130px;
+  width: 80%;
+  position: absolute;
+  bottom: 40px;
+  left: 67px;
+  text-align: center;
+  background-color: #000000ba;
+  color: white;
+  padding: 5px;
+}
+.search-Bar{
+    width: 264px;
+    height: 41px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-Button{
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+   width: 106px;
+  height: 35px;
+  display: flex;
+ align-items: center;
+ justify-content: center
+}
+.underline{
+      width: 59px;
+    height: 2px;
+    background-color: black;
+    margin-left: 2px;
+}
+.divider{
+  height: 40px;
+}
+.email-Box{
+  background-color: transparent;
+  height: 36px;
+  width: 250px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 2px;
+}
+.email-text-box{
+    height: 100%;
+    width: 120px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+.sign-up-button{
+    background-color: #e2823c;
+    width:166px;
+    height: 28px;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-content{
+  height:400px;
+  background-color:#000000cc;
+}
+.information{
+  height:100%;
+  padding-top:40px;
+  flex-direction:column;
+  justify-content:center;
+}
+.address{
+  height:100%;
+  justify-content:center;
+}
+.email{
+  text-align: center;
+}
+.shop-order{
+   width:21%;
+   margin:0;
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+}
+
+
+
+
+@media only screen and (max-width: 414px){
+  .logo-icons{
+    height: 50px!important;
+  }
+  .container{
+    width:90% !important;
+  }
+  .bottom-content{
+    height:auto;
+    margin: 5px;
+
+  }
+  .information{
+    padding-top: 0px;
+  }
+  .address{
+    height:100%;
+    justify-content:start;
+    margin-bottom:35px;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .shop-order{
+    order:-1;
+    width:77%;
+  }
+  .bottom-content-center-MQscreen{
+    padding: 0px 10px;
+  }
+  .card-text-section-banner{
+    left:33px;
+    height: auto;
+  }
+
+
+}

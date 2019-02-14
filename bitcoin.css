@@ -1,19 +1,19 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #F2F6F6;
   }
-  
+
   #bitcoin {
     display: flex;
     height: 100%;
     justify-content: flex-end;
   }
-  
+
   #sidebar {
     height: 100%;
     width: 16%;
@@ -23,7 +23,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .sidebar-Heading {
     background-color: rgb(66, 66, 66);
     width: 100%;
@@ -37,22 +37,22 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .sidebar-Menulist {
     width: 90%;
     margin: auto;
     padding: 0;
   }
-  
+
   #dropdown-Menu {
     display: none;
     padding-left: 20px;
   }
-  
+
   .sidebar-List-Align:active+#dropdown-Menu {
     display: block
   }
-  
+
   .sidebar-Listname-Align {
     color: white;
     list-style-type: none;
@@ -61,37 +61,37 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   li {
     list-style-type: none;
   }
-  
+
   .sidebar-list-Align {
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .sidebar-unarrowList-align {
     color: white;
     font-size: 13px;
     margin: 5px;
   }
-  
+
   #navigation-Bar {
     background-color: white;
     border-bottom: 2px solid #dedcdc;
     display: flex;
     justify-content: space-between;
   }
-  
+
   #main-Content {
     display: grid;
     width: 84%;
     row-gap: 40px;
   }
-  
+
   input[type="text"] {
     border-radius: 40px;
     border: none;
@@ -101,7 +101,7 @@
     font-size: 12px;
     padding: 10px;
   }
-  
+
   .searchbar {
     width: 475px;
     height: 60px;
@@ -109,7 +109,7 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  
+
   #navigation-Icon {
     width: 190px;
     height: flex;
@@ -121,7 +121,7 @@
     align-items: center;
     justify-content: space-around;
   }
-  
+
   .notification-mail {
     background-color: navy;
     width: 13px;
@@ -134,7 +134,7 @@
     top: 15px;
     left: 120px;
   }
-  
+
   .notification-bell {
     background-color: navy;
     width: 13px;
@@ -147,21 +147,21 @@
     top: 15px;
     left: 69px;
   }
-  
+
   #dashboard-Bar {
     background-color: white;
     height: 60px;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .dashboard-content {
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-  
+
   #profile-Image {
     background-color: #6D00FE;
     width: 200px;
@@ -170,11 +170,11 @@
     align-items: center;
     justify-content: space-around;
   }
-  
+
   img {
     border-radius: 50%;
   }
-  
+
   #bitcoin-value {
     display: grid;
     align-items: center;
@@ -182,13 +182,13 @@
     grid-template-columns: 30% 30% 30%;
     grid-gap: 30px;
   }
-  
+
   .bitcoin-Value-Card {
     background-color: white;
     height: 210px;
     position: relative;
   }
-  
+
   .bitcoin-Value-Card-logo {
     background-color: #6200ED;
     width: 50px;
@@ -198,7 +198,7 @@
     padding: 10px;
     font-size: 22px;
   }
-  
+
   .bitcoin-Value-Card-Text {
     width: 267px;
     font-size: 18px;
@@ -209,13 +209,13 @@
     top: 0;
     left: 59px;
   }
-  
+
   button {
     border: none;
     background-color:  #f5f2f2;
     font-size: 12px;
   }
-  
+
   #overview-Distribution {
     display: grid;
     grid-template-columns: 66% 26%;
@@ -223,31 +223,31 @@
     justify-content: space-evenly;
     height: 290px;
   }
-  
+
   .overview-Card {
     background-color: white;
     height: 100%;
     padding: 10px;
   }
-  
+
   .button-Scroll {
     height: 20px;
     overflow-y: scroll;
   }
-  
+
   .coin-Distribution-Card {
     background-color: white;
     height: 100%;
     padding: 10px;
   }
-  
+
   .overview-Card-Text {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .market-Value-card {
     background-color: white;
     width: 95%;
@@ -256,39 +256,38 @@
     margin: auto;
     overflow-y: scroll;
   }
-  
+
   .market-Value-Text {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .market-View-Button {
     margin: 0;
     overflow-y: scroll;
   }
-  
+
   table {
     width: 100%;
     margin: auto;
     border-collapse: collapse;
   }
-  
+
   th {
     text-align: center;
     padding: 15px;
   }
-  
+
   td {
     text-align: center;
   }
-  
+
   tr {
     background-color: #F6F6F9;
     font-size: 15px;
   }
-  
+
 thead, tbody{
     border-bottom: 5px solid white;
   }
-  

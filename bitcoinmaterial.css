@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0f2f1;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#search-input {
+  border-radius: 40px;
+  border: none;
+  background-color: #f5f2f2;
+  width: 279px;
+  height: 15px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.searchbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.notification-bell {
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 9px;
+  left: 57px;
+}
+
+.notification-mail {
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 9px;
+  left: 100px;
+}
+
+.profile-Image {
+  background-color: #6D00FE;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bitcoin-Value-Card-logo {
+  background-color: #6200ED;
+  width: 50px;
+  height: 50px;
+  border-bottom-right-radius: 100%;
+  color: white;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.bitcoin-Value-Card-Text {
+  width: 267px;
+  font-size: 18px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.bitcoin-Value-Card-logo {
+  background-color: #6200ED;
+  width: 50px;
+  height: 50px;
+  border-bottom-right-radius: 100%;
+  color: white;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-text-align {
+  position: relative;
+  bottom: 30px;
+}
+
+.overview-coin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width:414px){
+       .card-text-align{
+         bottom: 20px;
+       }
+       .notification-bell{
+         left:10px;
+       }
+       .notification-mail{
+         left:27px;
+       }
+       .profile{
+         margin-left: 60px;
+       }
+
+}

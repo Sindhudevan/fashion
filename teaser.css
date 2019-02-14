@@ -49,11 +49,15 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+.menu-bar-icon{
+   font-size: 20px;
+   display: none;
+}
 .titlename{
     width: 126px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 li{
   list-style-type: none;
@@ -69,7 +73,19 @@ width: 58em;
 font-weight: 700;
 font-size: 14px;
 cursor: pointer;
-
+}
+.dropdown{
+  display: none;
+  height: 361px;
+  background-color: gray;
+}
+.dropdown li {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .shopping{
   width: 200px;
@@ -236,6 +252,12 @@ cursor: pointer;
     margin: 0;
     font-size: 20px;
 }
+.mq-search-Bar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
 .underline{
       width: 59px;
     height: 2px;
@@ -248,10 +270,12 @@ cursor: pointer;
     height: 41px;
     border: 1px solid black;
     border-radius: 20px;
-    margin-top: 18px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.mq-search-Bar{
+  height: 70px;
 }
 .Search-input-text{
     width: 148px;
@@ -275,7 +299,7 @@ a{
  justify-content: center
 }
 .instagram-title{
-   padding:8px 0px;
+   height: 33px;
    font-size:20px;
   font-weight: 600;
 }
@@ -479,14 +503,14 @@ a{
   background-image: url(product03.jpeg);
   background-size: cover;
 }
-#banner04{
+#banner4{
   background-image:url(flower01.jpg);
   background-size: cover;
   height: 400px;
   margin-top: 75px;
   position: relative;
 }
-.banner04image-Text{
+.banner4image-Text{
     width: 90%;
     margin: auto;
     color: white;
@@ -518,7 +542,6 @@ a{
 .pagination a{
   color: rgb(77, 73, 73);
 }
-align-items: center;
 #bottom-content{
   background-image: url(footer.jpg);
   background-repeat: no-repeat;
@@ -562,7 +585,6 @@ align-items: center;
   color: white;
   display: block;
   height: 28px;
-  font-size: 14px;
 }
 .information{
   display: flex;
@@ -591,6 +613,9 @@ align-items: center;
 }
 .quicklinks-list{
   margin-bottom: 31px;
+}
+.plus{
+  display: none;
 }
 .banking{
   display: flex;
@@ -680,6 +705,7 @@ padding-top: 25px;
 }
 .card05{
   width: 40px;
+  height: 30px;
   background-color: #a7a4a4;
   font-size: 8px;
   display: flex;
@@ -708,23 +734,27 @@ padding-top: 25px;
   align-items: center;
   justify-content: space-around;
 }
+
+
 @media only screen and (max-width:414px) {
   body{
     height: auto;
   }
    #topbar{
-     height: auto;
+     height: 50px;
      width: 100%;
      display: flex;
-     align-items: flex-start;
+     align-items: center;
    }
    #topbar p{
+     display: none;
      padding-top: 14px;
      padding-right: 50px;
      margin: 12px;
      font-size: 14px;
    }
    .topbar-Icons{
+     align-items: center;
      font-size: 8px;
      width: 126px;
    }
@@ -733,11 +763,47 @@ padding-top: 25px;
      height: 20px;
    }
    .Eng-inr-text{
-     font-size: 10px;
-     justify-content: space-evenly;
+     font-size: 12px;
+    height: 50px;
+    width: 87px;
+    justify-content: space-evenly
+   }
+   .titlename{
+     width: 140px;s
+   }
+   .dropdown{
+    position: absolute;
+    top: 16%;
+    z-index: 99;
+    width: 100%;
    }
    .menu-list{
      display: none;
+   }
+   .menu-bar-icon{
+     display: block;
+   }
+   .titlename:hover +.dropdown{
+     display: block;
+   }
+   .dropdown ul{
+     padding: 0;
+   }
+   .dropdown li:hover{
+     background-color:
+    background-color: #716f6f;
+   }
+   .notification-Products{
+     bottom: 24px;
+     left: 243px;
+   }
+   .notification-Pages{
+     bottom: 22px;
+     left: 228px;
+   }
+   .notification-Buy{
+     bottom: 22px;
+     left: 220px;
    }
    .shopping {
     width: 112px;
@@ -759,39 +825,204 @@ padding-top: 25px;
     bottom: 9px;
     right: 8px;
   }
+
   #banner1{
       display: grid;
       grid-template-columns: auto;
       height: auto;
   }
   #banner-Bagimage{
-    height: 300px;
+    height: 360px;
+    width: 95%;
+    margin: 10px auto;
   }
   #banner-Middleimage{
-      height: 300px;
+      height: 360px;
+    width: 95%;
+    margin: 10px auto;
   }
   #banner-endimage{
-      height: 300px;
+      height: 360px;
+    width: 95%;
+    margin: 10px auto;
   }
   #banner2{
     display: grid;
       grid-template-columns: auto;
       height: auto;
-      margin-top: 0;
+      margin: 0;
+  }
+  .images-MQ{
+    width: 95%;
+    margin: 10px auto;
   }
   .banner2image-Text{
       width: 90%;
       font-size: 12px;
-      position: absolute;
-      bottom: 14px;
-      left: 22px;
+      letter-spacing: 1.5px;
+      bottom: 16px;
+      left: 16px;
   }
-
-
-
-
-
-
-
-
+  .image-paragraph {
+      height: auto;
+  }
+  .banner3-Image-Text{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    bottom: 17px;
+    left: 19px;
+  }
+  #banner4{
+    margin-top: 0px;
+  }
+  .banner4image-Text{
+    bottom: 16px;
+    left: 16px;
+  }
+  .divider {
+    height: 174px;
+  }
+  .pagination{
+    align-items: center;
+  }
+  .search-title {
+    margin: auto;
+  }
+  .search-Bar{
+    width: 100%;
+    justify-content: space-between;
+    padding: 3px;
+  }
+  ..Search-input-text {
+    width: 236px;
+  }
+  .underline{
+    margin: auto;
+  }
+  .mq-search-Bar {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .search-Bar{
+      width: 75%;
+      margin: auto;
+    }
+ .sales-products-title {
+    text-align: -webkit-center;
+}
+  .categories-title {
+    margin: auto;
+  }
+  #Categories-box{
+    text-align: center;
+    line-height: 22px;
+  }
+  .instagram-title{
+     text-align: center;
+  }
+.blog{
+    text-align: center;s
+}
+.blogtags-cards{
+      text-align: -webkit-center;
+}
+.recent-post-content{
+  text-align: left;
+      height: auto;
+      padding: 10px;
+}
+.recent-post-title{
+  text-align: center;
+}
+  #bottom-content{
+    height: auto;
+    width: 95%;
+    margin: auto;
+  }
+  #bottom-content-background{
+    display: grid;
+    grid-template-columns: 75%;
+    height: auto;
+    padding: 19px;
+  }
+  .address{
+    line-height:1.5;
+  }
+  .address-Icons {
+    width: 90%;
+    justify-content: space-between;
+  }
+  .address  p{
+    font-size: 16px;
+  }
+  .Categories{
+    height: 86px;
+  border-bottom: 2px solid white;
+  padding-top: 0px;
+  align-items: flex-end;
+  }
+  .categories-list a{
+     font-size: 18px;
+     display: none;
+  }
+  .categories-list {
+         width: 94px;
+  }
+  .information {
+    display: flex;
+  align-items: flex-end;
+  padding-top: 0;
+  height: 86px;
+  border-bottom: 2px solid white;
+  }
+  .information-list{
+    font-size: 16px;
+        width: 105px;
+  }
+  .information-list a {
+    font-size: 16px;
+    display: none;
+  }
+  .quicklinks {
+    height: 86px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid white
+}
+.plus{
+  display: block;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quicklinks-list {
+    margin-bottom: 0px;
+    width: 94px;
+}
+.quicklinks-list a{
+    margin-bottom: 0px;
+    display: none;
+}
+.banking{
+  text-align: center;
+}
+.end{
+  height: 70px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright{
+  font-size: 10px;
+  width: 100%;
+}
+.shopFooter{
+  margin: auto;
+  order: -1;
+}
 }

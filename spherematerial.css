@@ -1,0 +1,166 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  background-color: gold;
+  height: auto;
+}
+.rows{
+  padding: 0;
+}
+.logo-height{
+  height: 100px;
+}
+.navbar{
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+}
+.navul{
+  display: flex;
+}
+.navul li{
+  padding: 0px 20px;
+}
+.navul li:hover{
+  color: gold;
+}
+.arrow-Down{
+  color: white;
+  position: relative;
+  top:25%;
+}
+.banner-gif{
+  background-image: url(construction.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+  width: 100%;
+}
+.banner-text{
+  margin: 0;
+  position: relative;
+  top: 20%;
+  line-height: 1.5;
+  color:white;
+
+}
+.underline{
+  width: 93px;
+  height: 10px;
+  background-color: gold;
+}
+.service-image{
+  width: 100%;
+  height: 200px;
+}
+.card-color{
+  color: #424269;
+  background-color: #d3d3d336;
+}
+.about-paragraph{
+  padding: 10px;
+  line-height: 1.5;
+}
+.about-underline{
+  width: 93px;
+  height: 10px;
+  background-color: gold;
+  margin:0;
+}
+.parallax{
+  height: 600px;
+  width: 100%;
+  background-image: url(aboutimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.records{
+  width: 100%;
+  height: auto;
+  background-color: gold;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.record-divider{
+  width: 2px;
+  height: 80px;
+  background-color: white;
+}
+.hoverimg img:hover{
+  opacity: 0.5;
+}
+.textareas{
+  height: 8rem;
+}
+.submit .btn{
+ color:gold;
+ background-color:gray;
+}
+.submit:hover .btn{
+  color: green;
+  background-color: gold;
+}
+.footer-align{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer-icon{
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+@media only screen and (max-width: 414px  ) {
+  .record-divider{
+    display:none;
+  }
+  .banner-text{
+    font-size: 35px;
+  }
+  .clients{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .records-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .liner{
+    display: none;
+  }
+  footer{
+    display: block;
+    text-align: center;
+  }
+  .about-Heading-Text{
+  text-align: center;
+  }
+  .about-underline{
+  margin: auto;
+  }
+  .footer-align{
+    display: block;
+  }
+  .footer-icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
